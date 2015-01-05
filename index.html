@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+    <head>
+        <title>title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <script src="lib/jquery-1.6.4.js"></script>
+        <script src="lib/jquery.mobile-1.1.0.js"></script>
+        <link href="src/css/jquery.mobile.structure-1.1.0.css" rel="stylesheet"
+        />
+        <link href="src/css/jquery.mobile.theme-1.1.0.css" rel="stylesheet" />
+    </head>
+    
+    <body>
+        <div data-role="page" id="home" style="background-image: url('images/IMG-20130228-00208.jpg'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;"
+        data-theme="e">
+            <div data-role="header">
+                <h1>VEDC Malang</h1>
+            </div>
+            <div data-role="content">
+                <span>Selamat Datang</span>
+                <img src="images/Logo P4TK_VEDC 2.png" width="200" height="200"
+                style="display: block; margin: 0 auto" />
+            </div>
+            <div data-role="footer" data-position="fixed" data-theme="b">
+                <h1>Bagi Yang Ingin Maju</h1>
+                <div data-role="navbar">
+                    <ul>
+                        <li>
+                            <a data-role="button" href="#home" data-transition="flip" data-icon="home">Home</a>
+                        </li>
+                        <li>
+                            <a data-role="button" href="#menu" data-rel="dialog" data-transition="slideup" data-icon="grid">Menu</a>
+                        </li>
+                        <li>
+                            <a data-role="button" href="#info" data-rel="dialog" data-icon="info">Info</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div data-role="dialog" id="menu" style="background-image: url('images/IMG-20130323-00277.jpg'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;"
+        data-theme="e">
+            <div data-role="header">
+                <h1>VEDC</h1>
+            </div>
+            <div data-role="content">
+                <ul data-role="listview" data-inset="true">
+                    <li>
+                        <a href="#profil">Profil</a>
+                    </li>
+                    <li>
+                        <a href="#produk">Produk</a>
+                    </li>
+                    <li>
+                        <a href="#order">Order</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div data-role="dialog" id="info" data-theme="e">
+            <div data-role="header">
+                <h1>VEDC Malang</h1>
+            </div>
+            <div data-role="content">
+                <span>Dibuat oleh :</span>
+                <h3>Wahyu Purnomo</h3>
+                <img src="images/header-wp2-kcl.jpg" width="200" height="200"
+                style="display: block; margin: 0 auto" />
+            </div>
+        </div>
+        <div data-role="page" id="produk" data-theme="b">
+            <div data-role="header">
+                <h1>VEDC Malang</h1>
+            </div>
+            <div data-role="content">
+                <ul data-role="listview" data-inset="true">
+                    <li>
+                        <a href="#profil">Software Perpustakaan</a>
+                    </li>
+                    <li>
+                        <a href="#toko">Software Toko</a>
+                    </li>
+                    <li>
+                        <a href="#keuangan">Software Keuangan</a>
+                    </li>
+                </ul>
+            </div>
+            <div data-role="footer" data-position="fixed">
+                <h1>Bagi Yang Ingin Maju</h1>
+                <div data-role="navbar">
+                    <ul>
+                        <li>
+                            <a data-role="button" href="#home" data-transition="flip">Home</a>
+                        </li>
+                        <li>
+                            <a data-role="button" class="ui-btn-active" href="#menu" data-transition="slidedown"
+                            data-theme="a">Menu</a>
+                        </li>
+                        <li>
+                            <a data-role="button" href="#info" data-rel="dialog">Info</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div data-role="page" id="profil" data-theme="e">
+            <div data-role="header">
+                <h1>VEDC Malang</h1>
+            </div>
+            <div data-role="content">
+                <h4>Profile VEDC Malang</h4>
+                <span>VEDC Malang adalah institusi pengembangan skill</span>
+                <img src="images/slide1.jpg"
+                width="200" height="200" style="display: block; margin: 0 auto" />
+            </div>
+            <div data-role="footer" data-theme="b">
+                <h1>Bagi Yang Ingin Maju</h1>
+                <div data-role="navbar">
+                    <ul>
+                        <li>
+                            <a data-role="button" href="#home" data-transition="flip" data-icon="home">Home</a>
+                        </li>
+                        <li>
+                            <a data-role="button" href="#menu" data-transition="slideup" data-icon="grid" data-theme="b">Menu</a>
+                        </li>
+                        <li>
+                            <a data-role="button" href="#info" data-rel="dialog" data-icon="info">Info</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div data-role="dialog" id="order" data-title="Order Form">
+            <div data-role="header">
+                <h1>Order Form</h1>
+            </div>
+            <div data-role="content">
+                <form action="http://" method="POST">
+                    <h4>Order kami</h4>
+                    <p>Panggilan :</p>
+                    <select data-native-menu="false" data-inline="true">
+                        <option value="Value">Mr</option>
+                        <option value="Value">Mrs</option>
+                        <option value="Value">Ms</option>
+                        <option value="Value">Lainnya</option>
+                    </select>
+                    <div data-role="fieldcontain">
+                        <label for="text1">Nama Depan :</label>
+                        <input type="text" id="text1"  />
+                    </div>
+                    <div data-role="fieldcontain">
+                        <label for="text2">Nama Kelg :</label>
+                        <input type="text" id="text2"  />
+                    </div>
+                    <div data-role="fieldcontain">
+                        <label for="text3">Datang</label>
+                        <input type="date" id="text3"  />
+                    </div>
+                    <div data-role="fieldcontain">
+                        <label for="text4">Keluar</label>
+                        <input type="date" id="text4"  />
+                    </div>
+                    <p>Tamu</p>
+                    <div data-role="fieldcontain" id="slider1">
+                        <label for="slider1-range">Dewasa</label>
+                        <input type="range" id="slider1-range" value="1" min="0" max="5" step="1"
+                        data-highlight="true" />
+                    </div>
+                    <div data-role="fieldcontain" id="slider2">
+                        <label for="slider2-range">Anak-anak</label>
+                        <input type="range" id="slider2-range" value="1" min="0" max="5"
+                        step="1" data-highlight="true" />
+                    </div>
+                    <a data-role="button" class="ui-btn-active" href="www.gombong.com" data-mini="true"
+                    data-inline="true">Kirim</a>
+                </form>
+            </div>
+        </div>
+    </body>
+
+</html>
